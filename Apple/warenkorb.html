@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warenkorb</title>
+</head>
+<body>
+    <style>
+        
+        .firstrow {
+            background-color: rgb(235, 232, 232);
+            padding: 8px;
+            color: rgb(0, 0, 0);
+            position: sticky;
+            vertical-align: top;
+            text-align: center;
+            word-spacing: 10px;
+        }
+
+        .cart-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 500px;
+            gap: 12px;
+            background-color: #fff;
+        }
+
+        .cart-item-image {
+            width: 80px;
+        }
+
+        .cart-item-info {
+            flex: 1;
+        }
+
+        .buy-button {
+            margin-top: 8px;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        .delete-button {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+    </style>
+    
+    <div class="firstrow">
+        <span class="menuitem2"></span><a href="index.html" style="color: black; text-decoration: none;">Home</a>
+        <span class="menuitem2"></span><a href="warenkorb.html" style="color: black; text-decoration: none;">Warenkorb</a>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <script src="warenkorb.js"></script>
+</body>
+</html>
